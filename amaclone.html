@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<title>AmacloneStats</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+	.force-scroll
+	{
+		overflow-y: scroll;
+		height: 200px;
+	}
+	body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+	.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>Statistics</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-database w3-xxlarge"></i>
+    <p>Database</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="glyphicon glyphicon-file w3-xxlarge"></i>
+    <p>Prdictions</p>
+  </a>
+  <a href="#chart" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-bar-chart w3-xxlarge"></i>
+    <p>Charts</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">Database</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">Predictions</a>
+    <a href="#chart" class="w3-bar-item w3-button" style="width:25% !important">Charts</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small"></span> Amaclone.</h1>
+    <p>Analysis.</p>
+   
+  </header>
+
+  <!-- Stats Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Database</h2>
+    <hr style="width:200px" class="w3-opacity">
+	 <h3 class="w3-padding-16 w3-text-light-grey">User Stats</h3>
+	<div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">17</span><br>
+        Number visits today
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">226</span><br>
+       Registered Users
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">1005</span><br>
+        Total visits
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">405</span><br>
+        Total Buys
+      </div>
+    </div>    
+    
+   
+    
+    
+ 
+  <!-- Database Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Database</h2>
+    <hr style="width:200px" class="w3-opacity">
+	<img src="prediction.jpg" width="98%" height="90%" >
+    </div>
+  <!-- End database Section -->
+  </div>
+
+  <!-- Predictions Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Predictions</h2>
+    <hr style="width:200px" class="w3-opacity">
+	<div class="dropdown ">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+    Representations
+  </button>
+  <div class="dropdown-menu force-scroll">
+    <a class="dropdown-item"> Category
+	<ul style="list-style-type:none;">
+		<li>0 = Makeup</li>
+		<li>1 = Clothing</li>
+		<li>2 = Footwear</li>
+	</ul>  
+	</a><br>
+	
+    <a class="dropdown-item"> Gender
+	<ul style="list-style-type:none;">
+		<li>0 = Male</li>
+		<li>1 = Female</li>
+  
+	</ul>  
+	</a><br>
+	
+    <a class="dropdown-item"> age
+	<ul style="list-style-type:none;">
+		<li>14-18 = 0</li>
+		<li>19-35 = 1</li>
+		<li>35 & above = 2</li>
+	</ul>
+	</a><br>
+
+    <a class="dropdown-item"> Click
+	<ul style="list-style-type:none;">
+		<li><2(Low) = 0</li>
+		<li>>=2&<6(Average) = 1</li>
+		<li>>=6(High) = 2</li>
+	</ul>
+	</a><br>
+
+    <a class="dropdown-item"> Preference
+	<ul style="list-style-type:none;">
+		<li>0 = High</li>
+		<li>1 = Medium </li>
+		<li>2 = Low</li>
+	</ul>
+	</a><br>
+ 
+    <a class="dropdown-item"> Stickiness
+	<ul style="list-style-type:none;">
+		<li>0 = Low</li>
+		<li>1 = Medium </li>
+		<li>2 = High</li>
+	</ul>
+   </a><br>
+   
+    <a class="dropdown-item"> Discount
+	<ul style="list-style-type:none;">
+		<li>0 = No</li>
+		<li>1 = Yes </li>
+	</ul>
+	</a><br>
+ 
+	<a class="dropdown-item"> Special Day
+	<ul style="list-style-type:none;">
+		<li>0 = No</li>
+		<li>1 = Yes </li>
+	</ul>
+	</a><br>
+ 
+	<a class="dropdown-item"> Week Day
+	<ul style="list-style-type:none;">
+		<li>0 = Weekday</li>
+		<li>1 = Weekend </li>
+	</ul>
+	</a><br>
+ 
+	<a class="dropdown-item"> Time
+	<ul style="list-style-type:none;">
+		<li>1 = Morning</li>
+		<li>2 = Afternoon </li>
+		<li>3 = Evening</li>
+	</ul>
+	</a><br>
+	
+	<a class="dropdown-item"> Demography
+	<ul style="list-style-type:none;">
+		<li>0 = Urban</li>
+		<li>1 = Rural </li>
+	</ul>
+	</a><br>
+	
+	<a class="dropdown-item"> Cart
+	<ul style="list-style-type:none;">
+		<li>0 = No</li>
+		<li>1 = Yes </li>
+	</ul>
+	</a><br>
+	
+	<a class="dropdown-item"> Buys
+	<ul style="list-style-type:none;">
+		<li>0 = No</li>
+		<li>1 = Yes </li>
+	</ul>
+	</a><br>
+  </div> 
+</div>
+	<img src="prediction.jpg" width="98%" height="90%" >
+
+	<!-- Charts -->
+	<div class="w3-padding-64 w3-content w3-text-grey" id="chart">
+    <h2 class="w3-text-light-grey">Charts</h2>
+    <hr style="width:200px" class="w3-opacity">
+	<h4 style="color: white">Buys vs. Visits Chart</h4><br>
+	<img src="chart1.png" width="60%" height="50%">
+	</div>
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
